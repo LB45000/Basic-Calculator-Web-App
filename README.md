@@ -14,8 +14,7 @@ This is a simple web application that allows you to perform mathematical and com
 - [Getting Started](#getting-started)
 - [How to Use](#how-to-use)
 - [Testing](#testing)
-- [Contributing](#contributing)
-- [License](#license)
+
 
 ## Features
 
