@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -16,6 +16,9 @@
         <option value="/">/</option>
         <option value="**">^</option>
         <option value="%">%</option>
+        <option value=">">></option>
+        <option value="<"><</option>
+        <option value="!=">!=</option>
     </select>
     
     <input id="next-previous" type="number" placeholder="0" value="0">
@@ -30,6 +33,8 @@
         <span>Division: <span id="division">0</span></span>
         <span>Exponentiation: <span id="exponentiation">0</span></span>
         <span>Modulo: <span id="modulo">0</span></span>
+        <span>Comparison: <span id="comparison">false</span></span>
+        <span>Operand Data Types: <span id="operand-types"></span></span>
     </div>
     
     <script src="script.js"></script>
