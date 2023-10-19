@@ -30,18 +30,6 @@ Before you begin, ensure you have met the following requirements:
 
 - A web browser to run the application.
 
-## Getting Started
-
-To get started with the Math Operations Web App, follow these steps:
-
-1. Clone the repository to your local machine:
-
-   ```bash
-   git clone https://github.com/your-username/MathOperationsWebApp.git
-   ```
-
-2. Open `index.html` in your web browser.
-
 ## How to Use
 
 1. Enter numeric values in the "Previous Operand" and "Next Operand" input fields.
