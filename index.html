@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Basic 01 - Demo #2</title>
+</head>
+<body>
+    <h1 id="title">Demo #2: Mathematical Expressions</h1>
+    <input id="previous-operand" type="number" placeholder="0" value="0">
+    
+    <select id="operators">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+        <option value="**">^</option>
+        <option value="%">%</option>
+    </select>
+    
+    <input id="next-previous" type="number" placeholder="0" value="0">
+    
+    <button onclick="GiveMeResult()">Result</button>
+    
+    <div>
+        <span>Result: <span id="result">0</span></span>
+        <span>Addition: <span id="addition">0</span></span>
+        <span>Subtraction: <span id="subtraction">0</span></span>
+        <span>Multiplication: <span id="multiplication">0</span></span>
+        <span>Division: <span id="division">0</span></span>
+        <span>Exponentiation: <span id="exponentiation">0</span></span>
+        <span>Modulo: <span id="modulo">0</span></span>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
