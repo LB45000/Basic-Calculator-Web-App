@@ -11,7 +11,6 @@ This is a simple web application that allows you to perform mathematical and com
 
 - [Features](#features)
 - [Prerequisites](#prerequisites)
-- [Getting Started](#getting-started)
 - [How to Use](#how-to-use)
 - [Testing](#testing)
 
