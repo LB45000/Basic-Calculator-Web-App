@@ -6,6 +6,9 @@ function GiveMeResult() {
 
     // Perform the selected operation
     let resultNum = null;
+    let comparisonResult = false;
+    let operandTypes = "";
+
     switch (operator) {
         case '+':
             resultNum = previous_operand + next_previous;
@@ -39,6 +42,21 @@ function GiveMeResult() {
                 resultSpan.innerHTML = "Cannot calculate modulo by zero";
             }
             break;
+        case '>':
+            comparisonResult = previous_operand > next_previous;
+            operandTypes = `Operand Types: (${typeof previous_operand}, ${typeof next_previous})`;
+            resultSpan.innerHTML = comparisonResult;
+            break;
+        case '<':
+            comparisonResult = previous_operand < next_previous;
+            operandTypes = `Operand Types: (${typeof previous_operand}, ${typeof next_previous})`;
+            resultSpan.innerHTML = comparisonResult;
+            break;
+        case '!=':
+            comparisonResult = previous_operand !== next_previous;
+            operandTypes = `Operand Types: (${typeof previous_operand}, ${typeof next_previous})`;
+            resultSpan.innerHTML = comparisonResult;
+            break;
     }
 
     // Provide feedback for each specific operation
@@ -48,4 +66,6 @@ function GiveMeResult() {
     document.getElementById("division").innerHTML = `Division: ${previous_operand} / ${next_previous} = ${resultNum}`;
     document.getElementById("exponentiation").innerHTML = `Exponentiation: ${previous_operand} ^ ${next_previous} = ${resultNum}`;
     document.getElementById("modulo").innerHTML = `Modulo: ${previous_operand} % ${next_previous} = ${resultNum}`;
+    document.getElementById("comparison").innerHTML = `Comparison: ${previous_operand} ${operator} ${next_previous} = ${comparisonResult}`;
+    document.getElementById("operand-types").innerHTML = operandTypes;
 }
